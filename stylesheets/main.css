@@ -1,0 +1,125 @@
+/* body image */
+body{
+    background-image: url("../photo/photo27.jpg");
+    background-size: 100% 800px;
+    height: 100%;
+    width: 99%;
+    background-repeat: no-repeat;
+  }    
+  /* animation in text */
+
+  
+      @keyframes example {
+0% {color: rgb(255, 187, 0); transform:rotateZ(0deg);top:20%;font-size: 40px;left: 43%; }
+100% {color: rgb(0, 0, 0); transform: rotateZ(360deg); top: 40%;font-size: 160px; left: 25%;}    
+}
+
+#quizTest {
+color: rgb(32, 27, 27);  top: 40%;font-size: 160px; left: 25%;
+position:absolute;
+text-align: center;
+animation: example 5s ease-in-out 1 alternate;
+}
+
+
+
+/* header styling */
+#header { position: relative;
+  width: 100%;
+  height:70px;
+  color:white;
+  background-color: rgba(42, 45, 46, 0.541);
+  font-size:40px;
+  border-radius:10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+ }
+#headerName{
+  display: inline;
+  position: absolute;
+  left: 45%;
+  top:15%;
+       }
+
+
+ /* header button positioning */
+.signUp{
+  position: absolute;
+  right: 5%;
+  top:35%;  
+  padding: 5px; 
+  font-size: 10px;          
+  }
+
+#firstPage{
+  position:absolute;
+  bottom:30px;
+left:47%;
+  }    
+
+.sign { 
+  padding: 20px;
+  font-size: 1rem;
+  background-color: rgb(24, 21, 21);
+  color: white;
+  }
+
+
+/* grow effect in buttons */
+.hvr-grow { 
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: transform;
+transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+-webkit-transform: scale(1.5);
+transform: scale(1.5);
+border-radius: 100px;
+}
+
+
+/* color shutter effect in buttons */
+.hvr-shutter-out-horizontal {
+-webkit-transition-property: color;
+transition-property: color;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+border: none;
+border-radius: 100px;
+}
+.hvr-shutter-out-horizontal:before {
+content: "";
+position: absolute;
+z-index: -1;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: #f79801;
+-webkit-transform: scaleX(0);
+transform: scaleX(0);
+-webkit-transform-origin: 50%;
+transform-origin: 50%;
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+border-radius: 100px;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+color: white;
+border-radius: 100px;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+-webkit-transform: scaleX(1);
+transform: scaleX(1);
+border-radius: 100px;
+}

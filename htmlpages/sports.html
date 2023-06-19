@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="../javascript/sports.js"></script>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/current affairs.css" media="screen"/>
+         
+        <style>
+            body{
+       background-image: url("../photo/photo24.jpg");
+       background-size: 100% 800px;
+       height: 100%;
+       width: 94%;
+       background-size:cover;
+       background-repeat: no-repeat;
+   } 
+   </style>
+           
+   </head>    
+       <body>
+           <div id="header">
+               <spam id="websiteName">Quizzer</spam>
+               <div id="headerName">Name</div>
+               <button class="signUp hvr-grow hvr-shutter-out-horizontal" onclick="window.open('../main.html','_self')">SignOut</button>
+           </div>
+           <div id="quizTopic">
+               <h1>Sports</h1>
+           </div>
+           <hr>
+
+          <div id="questionBody">
+               
+                   <h1 id="question" class="question">questiond here</h1>
+           <ol>
+               <li>
+                   <input id="ans1" type="radio" class="answer" name="answer">
+                   <label id="option1" for="ans1">option 1</label>
+               </li>
+               <li>
+                   <input id="ans2" type="radio" class="answer" name="answer">
+                   <label id="option2" for="ans2">option 2</label>
+               </li>
+               <li>
+                   <input id="ans3" type="radio" class="answer" name="answer">
+                   <label id="option3" for="ans3">option 3</label>
+               </li>
+               <li>
+                   <input id="ans4" type="radio" class="answer" name="answer">
+                   <label id="option4" for="ans4">option 4</label>
+               </li>
+               
+           </ol>
+      <div id="btn12">
+           <button type="submit" class="btn btn2 hvr-float" id="next" onClick="nextQuestion()"> Next Question </button>
+           <button type="submit" class="btn btn1 hvr-float" onClick="previousQuestion()"> Previous Question</button>
+       </div>
+       </div>
+
+
+       <div class="scoreDiv" id="showScore">
+       <div id="score"></div>
+       <div id="message"> well done!!</div>
+       <div id=scoreBtn>
+       <button class="btn hvr-float " id="displayAns" onclick="display()">Display Answer</button>
+       <button class="btn hvr-float" id="retry" onclick="retry()">Retry</button>
+       <button class="btn hvr-float" id="otherQuiz" onclick="window.open('topics.html','_self')";>Try other Quiz</button>
+       <button class="btn hvr-float" id="home" onclick="window.open('welcomePage.html','_self')">Home</button>
+   </div>
+</div>
+
+
+
+
+   <div id="answerBody" class="answersBodyclass">
+       <h1 id=question>1.Who is the first Indian woman to win an Asian Games gold in 400m run</h1>
+       <ol>
+           <li  id="ans11" class="answer1" >M.L. Valsamma</li>
+   
+           <li  id="ans21" class="answer1" >P.T. Usha</li>
+   
+           <li  id="ans31" class="answer1">Kamaljit Sandhu</li>
+   
+           <li  id="ans41" class="answer1">K.Malleshwari</li>
+           
+       </ol>
+       <hr>
+   
+       <h1 id=question>2. The first Indian to cross seven important seas by swimming ____ ?</h1>
+       <ol>
+           <li  id="ans12" class="answer2">Amrendra Singh</li>
+   
+           <li  id="ans22" class="answer2">Bula Chaudhury</li>
+   
+           <li  id="ans32" class="answer2">Junko Taibei</li>
+   
+           <li  id="ans42" class="answer2">Yuri Gagarin</li>
+           
+       </ol>
+       <hr>
+   
+       <h1 id=question>3. The National Game of Japan is</h1>
+       <ol>
+           <li  id="ans13" class="answer3">Tennis</li>
+           <li  id="ans23" class="answer3">Karate</li>
+   
+           <li  id="ans33" class="answer3">Ice Hockey</li>
+   
+           <li  id="ans43" class="answer3">Sumo wrestling</li>
+           
+       </ol>
+       <hr>
+   
+       <h1 id=question>4. Which one of the following Cricketers has been declared by the ICC as 'Cricketer of the Twentieth Century</h1>
+       <ol>
+           <li  id="ans14" class="answer4">Sachin Tendulkar</li>
+   
+           <li  id="ans24" class="answer4">Kapil Dev</li>
+   
+           <li  id="ans34" class="answer4">Rahul Dravid</li>
+   
+           <li  id="ans44" class="answer4">Anil Kumble</li>
+           
+       </ol>
+       <hr>
+   
+       <h1 id=question>5. Which batsman started his international cricketing career at the age of 16</h1>
+       <ol>
+           <li  id="ans15" class="answer5">Suresh Raina</li>
+   
+           <li  id="ans25" class="answer5">Sachin Tendulkar</li>
+   
+           <li  id="ans35" class="answer5">Piyush Chawla</li>
+   
+           <li  id="ans45" class="answer5">Rahul Dravid</li>
+           
+       </ol>
+   
+   <button id="back" class="btn hvr-icon-back" onclick="back()"><img src="../photo/arrowback.svg" class="hvr-icon" />&nbspBack</button>
+</div>
+       </body>
+   
+</html>

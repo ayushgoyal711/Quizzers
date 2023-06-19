@@ -1,0 +1,266 @@
+        
+        /* header styling */
+          #header {
+            position: relative;
+            width: 105%;
+            height:70px;
+            color:rgb(65, 42, 42);
+            background-color: rgba(135, 142, 145, 0.37);
+            font-size:40px;
+            border-radius:10px;
+            font-weight: bold;
+            }
+          #websiteName{
+            position: relative;
+            top: 15%;
+            left: 10px;
+            }
+           #headerName{
+            display: inline;
+            position: absolute;
+            left: 45%;
+            top:15%;
+            }
+                /* alignment in header button */
+            .signUp{
+                position: absolute;
+                right: 5%;
+                top:35%;  
+                padding: 5px; 
+                font-size: 10px; 
+                cursor: pointer;
+                  }
+        
+        
+        /* grow effect in buttton */
+            .hvr-grow { 
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-property: transform;
+          transition-property: transform;
+        }
+        
+        
+        .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+          -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+          border-radius: 100px;
+        }
+        
+        /* color shutter effect in buttons */
+        .hvr-shutter-out-horizontal {
+          background: #e1e1e1;
+          -webkit-transition-property: color;
+          transition-property: color;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          border: none;
+          border-radius: 100px;
+         }
+        
+        
+        .hvr-shutter-out-horizontal:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgb(129, 85, 2);
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+          -webkit-transition-property: transform;
+          transition-property: transform;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+          border-radius: 100px;
+        }
+        .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+          color: white;
+          border-radius: 100px;
+        }
+        .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+          border-radius: 100px;
+        }
+        
+        /* quiz display body */
+        #quizTopic{
+            font-size: 40px ;
+            }
+        #questionBody{
+            position: relative;
+            top:20%;
+            left:5%;
+            font-family: cursive;
+            }
+            #question{
+              font-size: 30px;
+
+            }
+        li{
+            font-size: 25px;
+            padding-top:20px ;
+            }
+        #btn12{
+            padding-top: 30px;
+            margin-left: 30px;
+            }
+        .btn1{
+             background-color: orange;
+             margin-left: 700px;
+            text-align: center;
+            }
+        .btn{
+            background-color:rgb(129, 85, 2);
+            color: white;
+            border:none;
+            height: 50px;
+            width: 200px;
+            font-size: 20px;
+            cursor: pointer;
+            }
+        
+        
+        /* score display body */
+        .scoreDiv{
+            display: none;
+            }
+        .questionShow{
+            display: none;
+            }
+        #score{
+            text-align: center;
+            font-size: 100px;
+            color: rgb(65, 42, 42);
+            font-family: cursive;
+             }
+        #showScore{
+            text-align:center;
+            }
+        #scoreBtn{
+            margin-top: 100px;
+             }
+                
+        #retry {
+            margin-left: 60px;
+            }
+        #otherQuiz{
+            margin-left: 60px;
+             }
+        #home{
+            position: relative;
+             margin-left: 43.5%;
+            margin-top: 60px;
+            display: block;
+            }
+        
+        #message{
+            color: rgb(65, 42, 42);
+            font-family: cursive;
+            font-size: 20px;
+            }
+        .answersBodyclass{
+            display: none;
+            }
+        
+            /* icon hover effect in back button */
+        
+        .hvr-icon-back {
+            width: 100px;
+          text-align: center;
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+        }
+        .hvr-icon-back .hvr-icon .hvr-icon1 {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+          -webkit-transition-property: transform;
+          transition-property: transform;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+        }
+        .hvr-icon-back:hover .hvr-icon, .hvr-icon-back:focus .hvr-icon, .hvr-icon-back:active .hvr-icon {
+          -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+        }
+        
+        /* float effect in button */
+        
+        .hvr-float {
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-property: transform;
+          transition-property: transform;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+        }
+        .hvr-float:hover,  .hvr-float:active {
+          -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+          background-color: rgb(216, 168, 80);
+          color: rgb(0, 0, 0);
+        }
+        
+        /* customise radion button  */
+        
+        input[type="radio"]{
+            display: none;
+        }
+        label{
+            position: realtive;
+            border: 2px solid rgb(129, 85, 2);
+            border-radius: 5px;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding-right: 20px;
+            color: rgb(129, 85, 2);
+        }
+        label:hover{
+            color: white;
+        }
+        label::before{
+            content: "";
+            height: 17px;
+            width: 17px;
+            border:3px solid rgb(129, 85, 2);
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-left: 5px;
+        }
+        input[type="radio"]:checked+ label{
+            background-color: rgb(129, 85, 2);
+            color:white;
+        }
+        input[type="radio"]:checked+ label::before{
+            height: 16px;
+            width: 16px;
+            border: 5px solid white;
+            background-color: rgb(129, 85, 2);
+        }
+        

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="../javascript/science.js"></script>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/current affairs.css" media="screen"/>
+         
+        <style>
+            /* body background image */
+            body{
+       background-image: url("../photo/p.jpg");
+       background-size: 100% 800px;
+       height: 100%;
+       width: 94%;
+       background-repeat:cover;
+       background-size: cover;
+            } </style>
+          
+   </head>    
+       <body>
+           <div id="header">
+               <spam id="websiteName">Quizzer</spam>
+               <div id="headerName">Name</div>
+               <button class="signUp hvr-grow hvr-shutter-out-horizontal" onclick="window.open('../main.html','_self')">SignOut</button>
+           </div>
+           <div id="quizTopic">
+               <h1>Science</h1>
+           </div>
+           <hr>
+
+          <div id="questionBody">
+               
+                   <h1 id="question" class="question">questiond here</h1>
+           <ol>
+               <li>
+                   <input id="ans1" type="radio" class="answer" name="answer">
+                   <label id="option1" for="ans1">option 1</label>
+               </li>
+               <li>
+                   <input id="ans2" type="radio" class="answer" name="answer">
+                   <label id="option2" for="ans2">option 2</label>
+               </li>
+               <li>
+                   <input id="ans3" type="radio" class="answer" name="answer">
+                   <label id="option3" for="ans3">option 3</label>
+               </li>
+               <li>
+                   <input id="ans4" type="radio" class="answer" name="answer">
+                   <label id="option4" for="ans4">option 4</label>
+               </li>
+               
+           </ol>
+      <div id="btn12">
+           <button type="submit" class="btn btn2 hvr-float" id="next" onClick="nextQuestion()"> Next Question </button>
+           <button type="submit" class="btn btn1 hvr-float" onClick="previousQuestion()"> Previous Question</button>
+       </div>
+       </div>
+
+
+       <div class="scoreDiv" id="showScore">
+       <div id="score"></div>
+       <div id="message"> well done!!</div>
+       <div id=scoreBtn>
+       <button class="btn hvr-float " id="displayAns" onclick="display()">Display Answer</button>
+       <button class="btn hvr-float" id="retry" onclick="retry()">Retry</button>
+       <button class="btn hvr-float" id="otherQuiz" onclick="window.open('topics.html','_self')";>Try other Quiz</button>
+       <button class="btn hvr-float" id="home" onclick="window.open('welcomepage.html','_self')">Home</button>
+   </div>
+</div>
+
+
+
+
+   <div id="answerBody" class="answersBodyclass">
+       <h1 id=question>1. Currently in June 2020, which two countries soldiers fought along the border-line?</h1>
+       <ol>
+        <li  id="ans11" class="answer1">balanced diet</li>
+
+        <li  id="ans21" class="answer1">regular exercise</li>
+
+        <li  id="ans31" class="answer1">adequate sleep</li>
+
+        <li  id="ans41" class="answer1">all above are included</li>
+        
+    </ol>
+
+    <h1 id=question>2. The Sun’s mass is mainly consist of</h1>
+    <ol>
+        <li  id="ans12" class="answer2">hydrogen</li>
+
+        <li  id="ans22" class="answer2">helium</li>
+
+        <li  id="ans32" class="answer2">carbon dioxide</li>
+
+        <li  id="ans42" class="answer2">silicon</li>
+        
+    </ol>
+    <h1 id=question>3. Which component of blood helps the blood to clot and stop bleeding?</h1>
+    <ol>
+        <li  id="ans13" class="answer3">Red blood cells</li>
+
+        <li  id="ans23" class="answer3">White blood cells</li>
+
+        <li  id="ans33" class="answer3">Platelets</li>
+
+        <li  id="ans43" class="answer3">Plasma</li>
+        
+    </ol>
+    <h1 id=question>4. Which metal is vital for aerospace industry?</h1>
+    <ol>
+        <li  id="ans14" class="answer4">Copper</li>
+
+        <li  id="ans24" class="answer4">Aluminum</li>
+
+        <li  id="ans34" class="answer4">Iron</li>
+
+        <li  id="ans44" class="answer4">Nickel</li>
+        
+    </ol>
+    <h1 id=question>5. Which component of the blood fight against infections on wounds?</h1>
+    <ol>
+        <li  id="ans15" class="answer5">Plasma</li>
+
+        <li  id="ans25" class="answer5">Platelets</li>
+
+        <li  id="ans35" class="answer5">Red Blood Cells</li>
+
+        <li  id="ans45" class="answer5">White Blood Cells</li>
+        
+    </ol>
+   
+   <button id="back" class="btn hvr-icon-back" onclick="back()"><img src="../photo/arrowback.svg" class="hvr-icon" />&nbspBack</button>
+</div>
+       </body>
+   
+</html>
